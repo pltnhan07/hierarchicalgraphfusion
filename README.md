@@ -1,15 +1,12 @@
 # Multi-Scale Hierarchical Graph Fusion for Skin Lesion Diagnosis  
-Author: Pham Le Thanh Nhan (ITDSIU20073)  
-Thesis code submission
+Author: Pham Le Thanh Nhan
 
 --------------------------------------------------------------------------------
 
 TABLE OF CONTENTS
 
 - Project Overview
-- Folder Structure
 - Installation
-- Data Preparation
 - How to Run
   - Train & Test with Each Backbone
   - Expected Outputs
@@ -34,66 +31,17 @@ Main features:
 
 --------------------------------------------------------------------------------
 
-FOLDER STRUCTURE
-
-ITDSIU20073_PhamLeThanhNhan/
-|
-|-- run_dense201.py
-|-- run_resnet50.py
-|-- run_convnext_tiny.py
-|-- run_efficientnetb0.py
-|-- run_main_template.py
-|
-|-- requirements.txt
-|-- README.md
-|
-|-- src/
-|    |-- dataset.py
-|    |-- fusion_modules.py
-|    |-- model_dense201.py
-|    |-- model_resnet50.py
-|    |-- model_convnext_tiny.py
-|    |-- model_efficientnetb0.py
-|
-|-- data/
-|    |-- augmented29-4-padufes20-train-set/
-|    |     |-- augmented29_4_padufes20_train_metadata.csv
-|    |     |-- 123.png 456.png ... (all training images)
-|    |-- padufes20/
-|          |-- padufes20-test-set/
-|          |     |-- 789.png ... (all test images)
-|          |-- padufes20-test-metadata.csv
-|
-|-- outputs/
-|     |-- padufes20_hf1/   (DenseNet201 results)
-|     |-- mhgf2/           (ResNet50 results)
-|     |-- mhgf3/           (ConvNeXt-Tiny results)
-|     |-- mhgf4/           (EfficientNetB0 results)
-
---------------------------------------------------------------------------------
-
 INSTALLATION
 
 1. Python Version:
 - Recommended: Python 3.8 or later
 
 2. Install dependencies:
-Make sure you have PyTorch installed for your hardware.
+Make sure PyTorch is installed for your hardware.
 
     pip install -r requirements.txt
 
 - If using a GPU, follow official PyTorch instructions to install CUDA-enabled torch and torchvision.
-
---------------------------------------------------------------------------------
-
-DATA PREPARATION
-
-1. Download the PAD-UFES-20 dataset and place as shown above.
-- Ensure the image files and CSV metadata files are placed in data/ subfolders as shown.
-- The CSVs must include all the columns used in the scripts (see cols list in run_main_template.py).
-
-2. Check your data paths
-- If your folder names or file structure are different, adjust the paths in the scripts accordingly.
 
 --------------------------------------------------------------------------------
 
@@ -156,14 +104,7 @@ TROUBLESHOOTING
 
 --------------------------------------------------------------------------------
 
-CITATION & CONTACT
+CONTACT
 
-If using this code or its ideas in academic work, please cite:
-
-Pham Le Thanh Nhan. "Multi-Scale Hierarchical Graph Fusion for Skin Lesion Diagnosis." BSc Thesis, VNU-HCM IU, 2025.
-
-For questions, contact:
 Pham Le Thanh Nhan
 Email: pltnhan07@gmail.com
-
-Good luck! If you have any trouble, please email me.
